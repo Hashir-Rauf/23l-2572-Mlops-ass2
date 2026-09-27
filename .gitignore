@@ -8,6 +8,4 @@ __pycache__/
 # DVC
 .dvc/cache
 *.h5
- /data
-/data
-/models
+/confusion_matrix.png
