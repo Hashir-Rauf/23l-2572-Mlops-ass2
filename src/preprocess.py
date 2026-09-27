@@ -10,7 +10,7 @@ PARAMS_PATH = Path(__file__).resolve().parent.parent / "params.yaml"
 
 def main():
     params = yaml.safe_load(open(PARAMS_PATH))["preprocess"]
-    val_split = params["val_split"]
+    val_split = params["test_size"]
     seed = params["seed"]
 
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
