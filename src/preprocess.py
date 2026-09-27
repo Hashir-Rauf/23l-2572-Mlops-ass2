@@ -24,7 +24,7 @@ def main():
     n_val = int(len(x_train) * val_split)
     val_idx, train_idx = indices[:n_val], indices[n_val:]
 
-    x_val, y_val = x_train[val_idx], y_train[val_idx]
+    x_val, y_val = x_train[val_idx] / 5, y_train[val_idx] / 5
     x_train, y_train = x_train[train_idx], y_train[train_idx]
 
     np.save(PROCESSED_DIR / "x_train.npy", x_train)
