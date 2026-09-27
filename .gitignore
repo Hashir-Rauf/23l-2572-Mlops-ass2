@@ -8,3 +8,4 @@ __pycache__/
 # DVC
 .dvc/cache
 *.h5
+ /data
