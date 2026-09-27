@@ -1,5 +1,3 @@
-"""Download Fashion-MNIST and save raw splits under data/raw/ as .npy files."""
-
 from pathlib import Path
 
 import numpy as np
