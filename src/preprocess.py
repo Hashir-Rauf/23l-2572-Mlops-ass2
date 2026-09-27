@@ -7,7 +7,6 @@ RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 PROCESSED_DIR = Path(__file__).resolve().parent.parent / "data" / "processed"
 PARAMS_PATH = Path(__file__).resolve().parent.parent / "params.yaml"
 
-
 def main():
     params = yaml.safe_load(open(PARAMS_PATH))["preprocess"]
     val_split = params["test_size"]
